@@ -5,9 +5,10 @@
     $dbname = "ecrush";
     $con = mysqli_connect($host,$user,$pass,$dbname);
     if ($con){
-        echo "<script>alert('connected')</script>";
+        echo "";
+        // echo "<script>alert('connected')</script>";
     }
     else{
-        echo "<script>alert('not connected')</script>";
+        // echo "<script>alert('not connected')</script>";
     }
 ?>

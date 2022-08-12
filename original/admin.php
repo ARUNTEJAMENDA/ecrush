@@ -12,18 +12,17 @@
     <title>Admin</title>
 </head>
 <body>
-    <div class="one" id="one">
     <h1 style="text-align:center;">1.WEEK WITH ECRUSH</h1>
     <h2>daily posts</h2>
     <form>
         <table>
-            <tr><td>Name:</td><td><input type="text" id="onename"></td></tr>
-            <tr><td>Date:</td><td><input type="text" id="onedate"></td></tr>
-            <tr><td>file1:</td><td><input type="file" id="onef1"></td></tr>
-            <tr><td>file2:</td><td><input type="file" id="onef2"></td></tr>
-            <tr><td>file3:</td><td><input type="file" id="onef3"></td></tr>
+            <tr><td>Name:</td><td><input required type="text" id="oname"></td></tr>
+            <tr><td>Date:</td><td><input required type="text" id="odate"></td></tr>
+            <tr><td>file1:</td><td><input required type="file" id="of1"></td></tr>
+            <tr><td>file2:</td><td><input required type="file" id="of2"></td></tr>
+            <tr><td>file3:</td><td><input required type="file" id="of3"></td></tr>
         </table>
-        <button id="onesubmit" type="submit" value="submit">submit</button>
+        <button id="osubmit" type="submit" value="submit">submit</button>
     </form>
     <table border="5px">
         <tr><th>s.no</th><th>name</th><th>date</th><th>file1</th><th>file2</th><th>file3</th><th>operator</th></tr>
@@ -42,66 +41,35 @@
         }
     ?>        
     </table>
+    <hr>
     <h1 style="text-align:center;">SPECIAL WISHES</h1>
-
     <form>
         <table>
-      <tr><td>Name:</td><td><input type="text" ></td></tr>
-     <tr> <td>Date:</td><td><input type="text" ></td></tr>
-      <tr><td>file1:</td><td><input type="file" ></td></tr>
-      <tr><td>file2:</td><td><input type="file" ></td></tr>
-      <tr><td>file3:</td><td><input type="file" ></td></tr>
-      <tr><td>active</td><td><input type="text"></td></tr>
-    </table>
-    <button type="submit" value="submit">submit</button>
+            <tr><td>Name:</td><td><input required type="text" id="tname"></td></tr>
+            <tr><td>Date:</td><td><input required type="text" id="tdate"></td></tr>
+            <tr><td>file1:</td><td><input required type="file" id="tfile1"></td></tr>
+            <tr><td>file2:</td><td><input required type="file" id="tfile2"></td></tr>
+            <tr><td>file3:</td><td><input required type="file" id="tfile3"></td></tr>
+            <tr><td>active</td><td><input required type="text" id="tactive"></td></tr>
+        </table>
+        <button type="submit" value="submit">submit</button>
     </form>
     <table border="5px">
-        <tr>
-            <th>s.no</th>
-            <th>name</th>
-            <th>date</th>
-            <th>file1</th>
-            <th>file2</th>
-            <th>file3</th>
-            <th>active</th>
-            <th>operator</th>
-            
-        </tr>
-        <tr>
-           <th></th>
-           <th></th>
-           <th></th>
-           <th></th>
-           <th></th>
-           <th></th>
-           <th></th>
-           <th></th>
-           <th></th>
-        </tr>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-         </tr>
-        
+        <tr><th>s.no</th><th>name</th><th>date</th><th>file1</th><th>file2</th><th>file3</th><th>active</th><th>operator</th></tr>
     </table>
-</div>
-<div class="2" id="2">
+    <!-- ------------------------------------------- -->
+    <hr>
     <h1 style="text-align:center">2.WEEKEND TRIVIA</h1>
     <form>
         <table>
     
-      <tr><td>NAME OF THE WEEK:</td><td><input type="text"></td></tr>
-      <tr><td>DATE:</td><td><input type="text"></td></tr>
-      <tr><td>LINK:</td><td><input type="text"></td></tr>
+      <tr><td>NAME OF THE WEEK:</td><td><input required type="text"></td></tr>
+      <tr><td>DATE:</td><td><input required type="text"></td></tr>
+      <tr><td>LINK:</td><td><input required type="text"></td></tr>
       
-      <tr><td>WINNER-1:</td> <td><input type="text"><input type="text"><input type="text"></td></tr>
-      <tr><td>WINNER-2:</td> <td><input type="text"><input type="text"><input type="text"></td></tr>
-      <tr><td>WINNER-3:</td> <td><input type="text"><input type="text"><input type="text"></td></tr>
+      <tr><td>WINNER-1:</td> <td><input required type="text"><input required type="text"><input required type="text"></td></tr>
+      <tr><td>WINNER-2:</td> <td><input required type="text"><input required type="text"><input required type="text"></td></tr>
+      <tr><td>WINNER-3:</td> <td><input required type="text"><input required type="text"><input required type="text"></td></tr>
       
         </table> 
     
@@ -120,46 +88,18 @@
             <th>WINNER-2</th>
             <th>WINNER-3</th>
             <th>OPERATOR</th>
-            
         </tr>
-    
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    
-        </tr> 
-        
        </table>
-    </div>
-
-<div class="3" id="3">
+       <hr>
     <h1 style="text-align:center">3.NOTIFICATION POP-UP</h1>
     <form><table>
-    <tr><td>Notification name:</td><td><input type="text"></td><br></tr>
-    <tr><td>Date:</td><td><input type="text"><br></td></tr>
-    <tr><td>Message:</td><td><input type="text"></td><br></tr>
-    <tr><td>Link:</td><td><input type="text"></td><br></tr>
-    <tr><td>Active:</td><td><input type="text"></td><br></tr>
+    <tr><td>Notification name:</td><td><input required type="text"></td><br></tr>
+    <tr><td>Date:</td><td><input required type="text"><br></td></tr>
+    <tr><td>Message:</td><td><input required type="text"></td><br></tr>
+    <tr><td>Link:</td><td><input required type="text"></td><br></tr>
+    <tr><td>Active:</td><td><input required type="text"></td><br></tr>
     </table>
-    <input type="submit" name="submit">
+    <input required type="submit" name="submit">
 
     </form><br>
     <table border="5px">
@@ -193,16 +133,16 @@
                 </tr>
     </table>
     <br>
-</div>
+
 <div class="4" id="4">
     <h1 style="text-align:center">4.CONTACT FORM</h1>
     <form><table>
-    <tr><td>Name:</td><td><input type="text"></td><br></tr>
-    <tr><td>Date:</td><td><input type="text"><br></td></tr>
-    <tr><td>Message:</td><td><input type="text"></td><br></tr>
-    <tr><td>Mail:</td><td><input type="text"></td><br></tr>
+    <tr><td>Name:</td><td><input required type="text"></td><br></tr>
+    <tr><td>Date:</td><td><input required type="text"><br></td></tr>
+    <tr><td>Message:</td><td><input required type="text"></td><br></tr>
+    <tr><td>Mail:</td><td><input required type="text"></td><br></tr>
     </table>
-    <input type="submit" name="submit">
+    <input required type="submit" name="submit">
 
     </form><br>
     <table border="5px">
@@ -223,16 +163,16 @@
         <td></td>
     </tr>
     </table><br>
-</div>
+
     <div class="5">
     <h1 style="text-align:center">5.SUGGESTION</h1>
     <form>
     <table>
-    <tr><td>Date:</td><td><input type="text"><br></td></tr>
-    <tr><td>Message:</td><td><input type="text"></td><br></tr>
+    <tr><td>Date:</td><td><input required type="text"><br></td></tr>
+    <tr><td>Message:</td><td><input required type="text"></td><br></tr>
 
     </table>
-    <input type="submit" name="submit">
+    <input required type="submit" name="submit">
 
     </form><br>
     <table border="5px">
@@ -248,6 +188,6 @@
         <td></td>
     </tr>
     </table>
-</div>
+
 </body>
 </html>
