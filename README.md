@@ -1,3 +1,1 @@
-#ecrush by jnani
-jnani got idea
-changed
+#night workk
