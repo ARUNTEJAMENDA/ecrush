@@ -1,0 +1,69 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  body {
+    height: 200vh;
+    background: #121212;
+  }
+  
+  section {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    /* background: url("https://www.istockphoto.com/photo/yellow-question-mark-with-string-over-blue-background-gm1142819954-306677556?phrase=quiz") no-repeat top / 100% 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,1);
+    background: url("../img/CONTENT WRITING.jpg") top center;
+   
+  }
+  
+  section::after {
+    content: "";
+    position: absolute;
+    bottom: -300px;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, #f2f3f7 50%);
+  }
+  
+  .title {
+    color: #f7f7f7;
+    font-size: 80px;
+    font-family: "Dela Gothic One";
+    font-weight: lighter;
+    margin-top:160px;
+    text-align:center;
+  }
+  .subtext{
+    color:white;
+    font-size:18px;
+    font-weight: lighter;
+    margin-top:100px;
+    text-align:center;
+  }
+  @media(max-width:1000px){
+    .title {
+        color: #f7f7f7;
+        font-size:45px;
+  }
+   
+}
+  .position{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "Dela Gothic One";
+  }  
+
+a{
+  text-decoration:none;
+}  
