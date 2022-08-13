@@ -43,52 +43,52 @@
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- <a href="index.html">
+      <!-- <a href="index.php">
         <img style="height:60px; width:70px" src="assets/img/logo.png">
       </a>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+      <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
-          <a class="active" href="index.html" id="navElement">Home</a>
+          <a class="active" href="index.php" id="navElement">Home</a>
         </li>
         <li class="navElement">
-          <a href="about.html" id="navElement">About</a>
+          <a href="about.php" id="navElement">About</a>
         </li>
         <li class="navElement">
-          <a href="trainers.html" id="navElement">Weekend Trivia</a>
+          <a href="trainers.php" id="navElement">Weekend Trivia</a>
         </li>
         <li class="navElement">
-          <a href="courses.html" id="navElement">Courses</a>
+          <a href="courses.php" id="navElement">Courses</a>
         </li>
         <li class="navElement">
-          <a href="events.html" id="navElement">Events</a>
+          <a href="events.php" id="navElement">Events</a>
         </li>
         <li class="dropdown">
           <a href="#" id="navElement"><span>Clubs</span> 
             <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li style="color:white"><a href="web development.html">Web development</a></li>
-              <li style="color:white"><a href="E-Crush pods.html">E-Crush pods</a></li>
-              <li style="color:white"><a href="Promotion & marketing.html">Promotion & marketing</a></li>
-              <li style="color:white"><a href="Quiz.html">Quiz</a></li>
-              <li style="color:white"><a href="Technical.html">Technical</a></li>
-              <li style="color:white"><a href="Content writing.html">Content writing</a></li>
-              <li style="color:white"><a href="Soft Skill & Communication.html">Soft Skill & Communication</a></li>
-              <li style="color:white"><a href="Infra team.html">Infra team</a></li>
-              <li style="color:white"><a href="Desiging team.html">Desiging team</a></li>
-              <li style="color:white"><a href="E-skills.html">E-skills</a></li>
-              <li style="color:white"><a href="Photography.html">Photography</a></li>
-              <li style="color:white"><a href="E-Library.html">E-Library</a></li>
+              <li style="color:white"><a href="web development.php">Web development</a></li>
+              <li style="color:white"><a href="E-Crush pods.php">E-Crush pods</a></li>
+              <li style="color:white"><a href="Promotion & marketing.php">Promotion & marketing</a></li>
+              <li style="color:white"><a href="Quiz.php">Quiz</a></li>
+              <li style="color:white"><a href="Technical.php">Technical</a></li>
+              <li style="color:white"><a href="Content writing.php">Content writing</a></li>
+              <li style="color:white"><a href="Soft Skill & Communication.php">Soft Skill & Communication</a></li>
+              <li style="color:white"><a href="Infra team.php">Infra team</a></li>
+              <li style="color:white"><a href="Desiging team.php">Desiging team</a></li>
+              <li style="color:white"><a href="E-skills.php">E-skills</a></li>
+              <li style="color:white"><a href="Photography.php">Photography</a></li>
+              <li style="color:white"><a href="E-Library.php">E-Library</a></li>
             </ul>
         </li>
-        <li class="navElement"><a href="contact.html" id="navElement">Contact</a></li>
+        <li class="navElement"><a href="contact.php" id="navElement">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <a href="login.html" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
+    <a href="login.php" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
     </div>
   </header>
   <!-- End Header -->
@@ -280,21 +280,21 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
             </ul>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.html">E-Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.html">E-skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.html">Quizs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Soft skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Communtaions skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quizs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions skills</a></li>
             </ul>
           </div>
   
@@ -321,7 +321,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="web development.html">Web Team Ecrush</a>
+          Designed by <a href="web development.php">Web Team Ecrush</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

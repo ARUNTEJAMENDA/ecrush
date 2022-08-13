@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+  <head> 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Quiz | E-Crush </title>
+    <title>contact | E-Crush </title>
     <meta content="" name="description">
     <meta content="" name=""> 
     <!-- Jquery cdn -->
@@ -32,84 +32,175 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-  <link href="assets/css/about.css" rel="stylesheet">
-
+  
+  <link href="assets/css/contact.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- <a href="index.html">
+      <!-- <a href="index.php">
         <img style="height:60px; width:70px" src="assets/img/logo.png">
       </a>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+      <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
-          <a class="active" href="index.html" id="navElement">Home</a>
+          <a class="active" href="index.php" id="navElement">Home</a>
         </li>
         <li class="navElement">
-          <a href="about.html" id="navElement">About</a>
+          <a href="about.php" id="navElement">About</a>
         </li>
         <li class="navElement">
-          <a href="trainers.html" id="navElement">Weekend Trivia</a>
+          <a href="trainers.php" id="navElement">Weekend Trivia</a>
         </li>
         <li class="navElement">
-          <a href="courses.html" id="navElement">Courses</a>
+          <a href="courses.php" id="navElement">Courses</a>
         </li>
         <li class="navElement">
-          <a href="events.html" id="navElement">Events</a>
+          <a href="events.php" id="navElement">Events</a>
         </li>
         <li class="dropdown">
           <a href="#" id="navElement"><span>Clubs</span> 
             <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li style="color:white"><a href="web development.html">Web development</a></li>
-              <li style="color:white"><a href="E-Crush pods.html">E-Crush pods</a></li>
-              <li style="color:white"><a href="Promotion & marketing.html">Promotion & marketing</a></li>
-              <li style="color:white"><a href="Quiz.html">Quiz</a></li>
-              <li style="color:white"><a href="Technical.html">Technical</a></li>
-              <li style="color:white"><a href="Content writing.html">Content writing</a></li>
-              <li style="color:white"><a href="Soft Skill & Communication.html">Soft Skill & Communication</a></li>
-              <li style="color:white"><a href="Infra team.html">Infra team</a></li>
-              <li style="color:white"><a href="Desiging team.html">Desiging team</a></li>
-              <li style="color:white"><a href="E-skills.html">E-skills</a></li>
-              <li style="color:white"><a href="Photography.html">Photography</a></li>
-              <li style="color:white"><a href="E-Library.html">E-Library</a></li>
+              <li style="color:white"><a href="web development.php">Web development</a></li>
+              <li style="color:white"><a href="E-Crush pods.php">E-Crush pods</a></li>
+              <li style="color:white"><a href="Promotion & marketing.php">Promotion & marketing</a></li>
+              <li style="color:white"><a href="Quiz.php">Quiz</a></li>
+              <li style="color:white"><a href="Technical.php">Technical</a></li>
+              <li style="color:white"><a href="Content writing.php">Content writing</a></li>
+              <li style="color:white"><a href="Soft Skill & Communication.php">Soft Skill & Communication</a></li>
+              <li style="color:white"><a href="Infra team.php">Infra team</a></li>
+              <li style="color:white"><a href="Desiging team.php">Desiging team</a></li>
+              <li style="color:white"><a href="E-skills.php">E-skills</a></li>
+              <li style="color:white"><a href="Photography.php">Photography</a></li>
+              <li style="color:white"><a href="E-Library.php">E-Library</a></li>
             </ul>
         </li>
-        <li class="navElement"><a href="contact.html" id="navElement">Contact</a></li>
+        <li class="navElement"><a href="contact.php" id="navElement">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <a href="login.html" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
+    <a href="login.php" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
     </div>
   </header>
   <!-- End Header -->
-  
-  <main>
-    <div class="breadcrumbs web-banner text-center" data-aos="fade-in">
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
       <div class="container mt-5 mb-5">
-        <h2 class="text-uppercase"><b>QUIZ</b></h2>
-        <p class="mt-5">This club works on weekend quiz of E-crush. They obtain 
-      different English related, logical, reasoning, interesting 
-      questions and make students participate with excitement.</p>
+        <h2>Contact Us</h2>
+        <p class="mt-5">Your questions and doubts builds our confidence and corrects our mistakes
+        Never hesitate to contact us for all your queries
+        We encourage each and every word and query you ask us and answer them with all our patience. </p>
+      </div>
+    
+    </div>
+    <div class="navsection">
+    <nav>
+      <div class="container">
+        <ol>
+          <li><a href="index.php">Home</a></li>
+          <li>Contact</li>
+        </ol>
       </div>
     </div>
+    </nav>
+   <!-- End Breadcrumbs -->
+<br>
 
-    <p align="center" id="welcome" class="mt-5 mb-5 text-uppercase">WELCOME TO QUIZ PAGE OF E-CRUSH RGUKTN.......</p>
-    <hr>
+
+
+    <div class="contactinfo">
+      <p style="background:white;">
+      <section class="contactcard">
+        <div class="rows">
     
-    <section class="container">
-      <h1 class="m-5 text-center text-info">Will be UPDATED soon...</h1>
-    </section>
+        </div>
+        <div class="rows">
+          <div class="column">
+            <div class="concard">
+              <div class="icon-wrapper">
+                <i class="fa fa-building"></i>
+              </div>
+              <h3>Main Office</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                consequatur necessitatibus eaque.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="concard">
+              <div class="icon-wrapper">
+                <i class="fa fa-phone"></i>
+              </div>
+              <h3>Phone Number</h3>
+              <p>
+                 +91 9398848215,<br>
+                 Yernagula.Siddartha,<br>
+                 Developer of E-Crush site.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="concard">
+              <div class="icon-wrapper">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <h3>Mail</h3>
+              <p>
+                ecrushrgukt@gmail.com<br>
+                ecrushwebteam@gmail.com
+              </p>
+            </div>
+          </div>
+        
+         
+          
+        </div>
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <div class="contactus">
+    <section id="contact" class="contact">
+      <div class="contactcontainer">
+        <div class="content">
+          <div class="image-box">
+            <img src="assets/img/Contact.png" alt="">
+          </div>
+        <form action="#">
+          <div class="topic">Send us a message</div>
+          <div class="input-box">
+            <input type="text" required>
+            <label>Enter your name</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required>
+            <label>Enter your email</label>
+          </div>
+          <div class="message-box">
+            <textarea></textarea>
+            <label>Enter your message</label>
+          </div>
+           
+          <div class="input-box">
+            <input type="submit" value="Send Message">
+          </div>
+        </form>
+      </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </div>
   </main>
 
   <!-- ======= Footer ======= -->
@@ -134,21 +225,21 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
             </ul>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.html">E-Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.html">E-skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.html">Quizs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Soft skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Communtaions skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quizs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions skills</a></li>
             </ul>
           </div>
   
@@ -175,7 +266,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="web development.html">Web Team Ecrush</a>
+          Designed by <a href="web development.php">Web Team Ecrush</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

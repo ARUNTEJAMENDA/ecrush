@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>E-skills | E-Crush </title>
+    <title>Infra team | E-Crush </title>
     <meta content="" name="description">
     <meta content="" name=""> 
     <!-- Jquery cdn -->
@@ -41,147 +42,96 @@
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- <a href="index.html">
+      <!-- <a href="index.php">
         <img style="height:60px; width:70px" src="assets/img/logo.png">
       </a>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+      <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
-          <a class="active" href="index.html" id="navElement">Home</a>
+          <a class="active" href="index.php" id="navElement">Home</a>
         </li>
         <li class="navElement">
-          <a href="about.html" id="navElement">About</a>
+          <a href="about.php" id="navElement">About</a>
         </li>
         <li class="navElement">
-          <a href="trainers.html" id="navElement">Weekend Trivia</a>
+          <a href="trainers.php" id="navElement">Weekend Trivia</a>
         </li>
         <li class="navElement">
-          <a href="courses.html" id="navElement">Courses</a>
+          <a href="courses.php" id="navElement">Courses</a>
         </li>
         <li class="navElement">
-          <a href="events.html" id="navElement">Events</a>
+          <a href="events.php" id="navElement">Events</a>
         </li>
         <li class="dropdown">
           <a href="#" id="navElement"><span>Clubs</span> 
             <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li style="color:white"><a href="web development.html">Web development</a></li>
-              <li style="color:white"><a href="E-Crush pods.html">E-Crush pods</a></li>
-              <li style="color:white"><a href="Promotion & marketing.html">Promotion & marketing</a></li>
-              <li style="color:white"><a href="Quiz.html">Quiz</a></li>
-              <li style="color:white"><a href="Technical.html">Technical</a></li>
-              <li style="color:white"><a href="Content writing.html">Content writing</a></li>
-              <li style="color:white"><a href="Soft Skill & Communication.html">Soft Skill & Communication</a></li>
-              <li style="color:white"><a href="Infra team.html">Infra team</a></li>
-              <li style="color:white"><a href="Desiging team.html">Desiging team</a></li>
-              <li style="color:white"><a href="E-skills.html">E-skills</a></li>
-              <li style="color:white"><a href="Photography.html">Photography</a></li>
-              <li style="color:white"><a href="E-Library.html">E-Library</a></li>
+              <li style="color:white"><a href="web development.php">Web development</a></li>
+              <li style="color:white"><a href="E-Crush pods.php">E-Crush pods</a></li>
+              <li style="color:white"><a href="Promotion & marketing.php">Promotion & marketing</a></li>
+              <li style="color:white"><a href="Quiz.php">Quiz</a></li>
+              <li style="color:white"><a href="Technical.php">Technical</a></li>
+              <li style="color:white"><a href="Content writing.php">Content writing</a></li>
+              <li style="color:white"><a href="Soft Skill & Communication.php">Soft Skill & Communication</a></li>
+              <li style="color:white"><a href="Infra team.php">Infra team</a></li>
+              <li style="color:white"><a href="Desiging team.php">Desiging team</a></li>
+              <li style="color:white"><a href="E-skills.php">E-skills</a></li>
+              <li style="color:white"><a href="Photography.php">Photography</a></li>
+              <li style="color:white"><a href="E-Library.php">E-Library</a></li>
             </ul>
         </li>
-        <li class="navElement"><a href="contact.html" id="navElement">Contact</a></li>
+        <li class="navElement"><a href="contact.php" id="navElement">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <a href="login.html" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
+    <a href="login.php" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
     </div>
   </header>
   <!-- End Header -->
   
-  <main>
-    <div class="breadcrumbs web-banner text-center" data-aos="fade-in">
-      <div class="container mt-5 mb-5">
-        <h2 class="text-uppercase"><b>E-skills</b></h2>
-        <p class="mt-5">This club concentrates on improving all skills of students and
-      volunteers and uses the skills in a way of development of 
-      organisation. They also provide week with e-crush content 
-      like quote of the day, vocabulary etc...</p>
-      </div>
-    </div>
+  <main id="main">
+    <br>
+<br>
+<p align="center" id="welcome">WELCOME TO INFRA TEAM PAGE OF E-CRUSH RGUKTN.......</p>
+<br>
+<hr>
+<br>
+<br>
+<div class="section-header">
+  <span>Recent works</span>
+  <h2>Recent works</h2>
+</div>
+<div id="gallery" class="gallery" style="padding: 0px 10%;margin-top:30px;" >
+  <div class="container-fluid">
 
-    <p align="center" id="welcome" class="mt-5 mb-5 text-uppercase">WELCOME TO E-skills PAGE OF E-CRUSH RGUKTN.......</p>
-    <hr>
-    
-    <section class="container">
-      <div class="row mt-5 mb-5">
-        <div class="col-lg-3 col-md-4">
-          <div class="card-container">
-            <div class="cont-card">
-              <div class="card-content">
-                <div class="imgBx1">
-                  <a href="assets\img\E-skills\Content\Tongue twisters-1.pdf" target="_blank"> <img src="assets\img\E-skills\tongue twisters.webp" alt="Spell these if you can" width="310" height="250"></a>
-                </div>
-              <div class="skills-text" align="center">Tounge twisters</div>
-              </div>
-            </div>
-          </div>
+    <div class="row gy-4 justify-content-center">
+      <div class="col-xl-3 col-lg-2 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/photography/1.webp" class="img-fluid" alt="" width="300px">
+         
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="card-container">
-            <div class="cont-card">
-              <div class="card-content">
-                <div class="imgBx1">
-                  <a href="assets\img\E-skills\Content\VOCABULARY@E-SKILLS (1).pdf" target="_blank"> <img src="assets\img\E-skills\vocabulary.webp" alt="Sharp your vocabulary skills here" width="310" height="250"></a>
-                </div>
-                <div class="skills-text" align="center">Vocabulary</div>
-              </div>
-            </div>
-          </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/trainers/c4.webp" class="img-fluid" alt="">
+          
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="card-container">
-            <div class="cont-card">
-              <div class="card-content">
-                <div class="imgBx1">
-                  <a href="assets\img\E-skills\Content\Eskills_facts2.mp4" target="_blank"><img src="assets\img\E-skills\E-crush facts.webp" alt="Learn some fantastic facts here" width="310" height="250"></a>
-                </div>
-              <div class="skills-text" align="center">Facts</div>
-              </div>
-            </div>
-          </div>
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/trainers/c4.webp" class="img-fluid" alt="">
+          
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="card-container">
-            <div class="cont-card">
-              <div class="card-content">
-                  <div class="imgBx1">
-                    <a href="assets\img\E-skills\Content\phrases & phrasal verbs.pdf" target="_blank"><img src="assets\img\E-skills\phrases.webp" alt="Learn Phrases and phrasel verbs with meaning here" width="310" height="250"></a>
-                  </div>
-                  <div class="skills-text" align="center">Phrases and Phrasal verbs</div>
-              </div>
-            </div>
-          </div>   
+      </div><!-- End Gallery Item -->
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="gallery-item h-100">
+          <img src="assets/img/trainers/c4.webp" class="img-fluid" alt="">
+          
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="card-container">
-           <div class="cont-card">
-              <div class="card-content">
-                <div class="imgBx1">
-                  <a href="assets\img\E-skills\Content\Document-WPS Office.pdf" target="_blank"> <img src="assets\img\E-skills\Riddles and puzzles.webp" alt="Find answers of these tough riddles and puzzles if you can!.." width="310" height="250"></a>
-                </div>
-                <div class="skills-text" align="center">Riddles and puzzles</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="card-container">
-            <div class="cont-card">
-              <div class="card-content">
-                <div class="imgBx1">
-                  <a href="assets\img\E-skills\Content\IDIOMS@E-Skills.pdf" target="_blank"> <img src="assets\img\E-skills\idioms.webp" alt="Find meanings of some popular idioms here" width="310" height="250"></a>
-                </div>
-              <div class="skills-text" align="center">Idioms</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>   
-    </div>
-    </section>
+   
   </main>
 
   <!-- ======= Footer ======= -->
@@ -206,21 +156,21 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
             </ul>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.html">E-Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.html">E-skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.html">Quizs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Soft skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Communtaions skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quizs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions skills</a></li>
             </ul>
           </div>
   
@@ -243,7 +193,11 @@
           &copy; Copyright <strong><span>E-Crush</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by <a href="web development.html">Web Team Ecrush</a>
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+          Designed by <a href="web development.php">Web Team Ecrush</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -262,7 +216,7 @@
   <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Infra team | E-Crush </title>
+    <title>Promotion & marketing | E-Crush </title>
     <meta content="" name="description">
     <meta content="" name=""> 
     <!-- Jquery cdn -->
@@ -42,96 +42,124 @@
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- <a href="index.html">
+      <!-- <a href="index.php">
         <img style="height:60px; width:70px" src="assets/img/logo.png">
       </a>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+      <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
-          <a class="active" href="index.html" id="navElement">Home</a>
+          <a class="active" href="index.php" id="navElement">Home</a>
         </li>
         <li class="navElement">
-          <a href="about.html" id="navElement">About</a>
+          <a href="about.php" id="navElement">About</a>
         </li>
         <li class="navElement">
-          <a href="trainers.html" id="navElement">Weekend Trivia</a>
+          <a href="trainers.php" id="navElement">Weekend Trivia</a>
         </li>
         <li class="navElement">
-          <a href="courses.html" id="navElement">Courses</a>
+          <a href="courses.php" id="navElement">Courses</a>
         </li>
         <li class="navElement">
-          <a href="events.html" id="navElement">Events</a>
+          <a href="events.php" id="navElement">Events</a>
         </li>
         <li class="dropdown">
           <a href="#" id="navElement"><span>Clubs</span> 
             <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li style="color:white"><a href="web development.html">Web development</a></li>
-              <li style="color:white"><a href="E-Crush pods.html">E-Crush pods</a></li>
-              <li style="color:white"><a href="Promotion & marketing.html">Promotion & marketing</a></li>
-              <li style="color:white"><a href="Quiz.html">Quiz</a></li>
-              <li style="color:white"><a href="Technical.html">Technical</a></li>
-              <li style="color:white"><a href="Content writing.html">Content writing</a></li>
-              <li style="color:white"><a href="Soft Skill & Communication.html">Soft Skill & Communication</a></li>
-              <li style="color:white"><a href="Infra team.html">Infra team</a></li>
-              <li style="color:white"><a href="Desiging team.html">Desiging team</a></li>
-              <li style="color:white"><a href="E-skills.html">E-skills</a></li>
-              <li style="color:white"><a href="Photography.html">Photography</a></li>
-              <li style="color:white"><a href="E-Library.html">E-Library</a></li>
+              <li style="color:white"><a href="web development.php">Web development</a></li>
+              <li style="color:white"><a href="E-Crush pods.php">E-Crush pods</a></li>
+              <li style="color:white"><a href="Promotion & marketing.php">Promotion & marketing</a></li>
+              <li style="color:white"><a href="Quiz.php">Quiz</a></li>
+              <li style="color:white"><a href="Technical.php">Technical</a></li>
+              <li style="color:white"><a href="Content writing.php">Content writing</a></li>
+              <li style="color:white"><a href="Soft Skill & Communication.php">Soft Skill & Communication</a></li>
+              <li style="color:white"><a href="Infra team.php">Infra team</a></li>
+              <li style="color:white"><a href="Desiging team.php">Desiging team</a></li>
+              <li style="color:white"><a href="E-skills.php">E-skills</a></li>
+              <li style="color:white"><a href="Photography.php">Photography</a></li>
+              <li style="color:white"><a href="E-Library.php">E-Library</a></li>
             </ul>
         </li>
-        <li class="navElement"><a href="contact.html" id="navElement">Contact</a></li>
+        <li class="navElement"><a href="contact.php" id="navElement">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <a href="login.html" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
+    <a href="login.php" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
     </div>
   </header>
   <!-- End Header -->
   
-  <main id="main">
-    <br>
-<br>
-<p align="center" id="welcome">WELCOME TO INFRA TEAM PAGE OF E-CRUSH RGUKTN.......</p>
-<br>
-<hr>
-<br>
-<br>
-<div class="section-header">
-  <span>Recent works</span>
-  <h2>Recent works</h2>
-</div>
-<div id="gallery" class="gallery" style="padding: 0px 10%;margin-top:30px;" >
-  <div class="container-fluid">
+  <main>
+    <div class="breadcrumbs web-banner text-center" data-aos="fade-in">
+      <div class="container mt-5 mb-5">
+        <h2 class="text-uppercase"><b>Promotions and Marketing</b></h2>
+        <p class="mt-5">This club is meant to promote the organisation. At the times
+      of events and activities it supports and helps in development 
+      of E-crush. All social media sites of E-crush is also handled
+      by this club.</p>
+      </div>
+    </div>
+    
+    <p align="center" id="welcome" class="mt-5 mb-5 text-uppercase">WELCOME TO Promotions and Marketing PAGE OF E-CRUSH RGUKTN.......</p>
+    <hr>
 
-    <div class="row gy-4 justify-content-center">
-      <div class="col-xl-3 col-lg-2 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/img/photography/1.webp" class="img-fluid" alt="" width="300px">
-         
-        </div>
-      </div><!-- End Gallery Item -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/img/trainers/c4.webp" class="img-fluid" alt="">
-          
-        </div>
-      </div><!-- End Gallery Item -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/img/trainers/c4.webp" class="img-fluid" alt="">
-          
-        </div>
-      </div><!-- End Gallery Item -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="gallery-item h-100">
-          <img src="assets/img/trainers/c4.webp" class="img-fluid" alt="">
-          
-        </div>
+    <section class="container mb-5">
+    <p style="text-align:left;">
+      <div class="section-header">
+        <span>Promotions</span>
+        <h2>Promotions</h2>
+      </div>
    
+      <span style="font-size:20px">  Promotion refers to any type of marketing communication used to inform target audience of the relative merits of a service, most of the time persuasive in nature.Promotion covers the methods of communication that a marketer uses to provide information about its product.
+      <br>
+      <span style="font-size:25px">Different types of promotions:<br></span>
+        1.  Advertising. <br>
+        2. Sales Promotion.<br>
+        3. Public Relations. <br>
+        4. Direct Marketing.<br>
+      <br>
+      <b>Advertsing:</b><br>
+        • Advertising is defined as any form of communication or promotion for service and idea. Advertising development involves a decision across five Ms Mission, Money, Message, Media and Measurement.<br>
+  
+      <b>Sales Promotion:</b><br>
+        • The focus of advertising to create reason for purchase the focus of promotion is to create an incentive to buy. <br>
+        • Sales promotional activity for the product is selected looking at the overall marketing objective of the organization. <br>
+      <b>Public Relations:<br></b>
+        • Organisations cannot survive in isolation they need to have a constant interaction with people.<br>
+        • The major function of the public relation office is to handle press releases, support publicity, create and maintain the corporate image, handle matters with lawmakers, guide management with respect to public issues.<br>
+      <b>Direct Marketing:</b><br>
+        • The communication establishes through a direct channel without using any intermediaries is referred to as direct marketing. Direct marketing can be used to deliver message or service. 
+      <br></span>
+      <div class="section-header">
+        <span>markrting</span>
+        <h2>Marketing</h2>
+      </div>
+       <span style="font-size:20px">Marketing is the process of exploring, creating, and delivering value to meet the needs of a target market in terms of goods and services, potentially including selection of a target audience, selection of certain attributes or themes to emphasize in advertising. 
+      It attempts to create awareness and positive feelings about a brand.<br>
+      
+      <br>
+      <span style="font-size:25px">TYPES OF MARKETING:<br></span>
+      <b>1.Outbound marketing:</b><br>
+      When a marketing strategy is referred to as "outbound," it's focused on how the message is being delivered. 
+      <br>
+      <b>2.Personalized marketing:</b><br>
+      Personalized marketing is a strategy in which the company uses historical data to create a personalized experience for audience. 
+      <br>
+      <b>3.Partner marketing :<br></b>
+       The partner marketing strategy requires two organisations to work together to create one cohesive message. 
+       <br>
+      <b>4.Brand marketing:<br></b>
+       Brand marketing is a long-term form of marketing in which the goal is to become recognizable and establish a good reputation. 
+      <br>
+       <b>5.Cause marketing:<br></b>
+       Cause marketing is a strategy in which a company chooses to back a certain cause as a way of strengthening their brand's core values. 
+        <br>
+      </span>
+    </p>
+    </section>
   </main>
 
   <!-- ======= Footer ======= -->
@@ -156,21 +184,21 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
             </ul>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.html">E-Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.html">E-skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.html">Quizs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Soft skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Communtaions skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quizs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions skills</a></li>
             </ul>
           </div>
   
@@ -197,7 +225,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="web development.html">Web Team Ecrush</a>
+          Designed by <a href="web development.php">Web Team Ecrush</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -215,7 +243,6 @@
 
   <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

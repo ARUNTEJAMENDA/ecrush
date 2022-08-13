@@ -43,52 +43,52 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- <a href="index.html">
+      <!-- <a href="index.php">
         <img style="height:60px; width:70px" src="assets/img/logo.png">
       </a>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+      <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
-          <a class="active" href="index.html" id="navElement">Home</a>
+          <a class="active" href="index.php" id="navElement">Home</a>
         </li>
         <li class="navElement">
-          <a href="about.html" id="navElement">About</a>
+          <a href="about.php" id="navElement">About</a>
         </li>
         <li class="navElement">
-          <a href="trainers.html" id="navElement">Weekend Trivia</a>
+          <a href="trainers.php" id="navElement">Weekend Trivia</a>
         </li>
         <li class="navElement">
-          <a href="courses.html" id="navElement">Courses</a>
+          <a href="courses.php" id="navElement">Courses</a>
         </li>
         <li class="navElement">
-          <a href="events.html" id="navElement">Events</a>
+          <a href="events.php" id="navElement">Events</a>
         </li>
         <li class="dropdown">
           <a href="#" id="navElement"><span>Clubs</span> 
             <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li style="color:white"><a href="E-Library.html">E-Library</a></li>
-              <li style="color:white"><a href="E-skills.html">E-Skills</a></li>
-              <li style="color:white"><a href="Soft Skill & Communication.html">Soft & Communication SkillS</a></li>
-              <li style="color:white"><a href="Content writing.html">Content Writing</a></li>
-              <li style="color:white"><a href="Photography.html">Photography</a></li>
-              <li style="color:white"><a href="Quiz.html">Quiz</a></li>
-              <li style="color:white"><a href="E-Crush pods.html">Podcasting</a></li>
-              <li style="color:white"><a href="web development.html">Web Development</a></li>
-              <li style="color:white"><a href="Desiging team.html">Desiging</a></li>
-              <li style="color:white"><a href="Promotion & marketing.html">Promotions & Marketing</a></li>
-              <li style="color:white"><a href="Technical.html">Technical</a></li>
-              <li style="color:white"><a href="Infra team.html">Infra Team</a></li>
+              <li style="color:white"><a href="E-Library.php">E-Library</a></li>
+              <li style="color:white"><a href="E-skills.php">E-Skills</a></li>
+              <li style="color:white"><a href="Soft Skill & Communication.php">Soft & Communication SkillS</a></li>
+              <li style="color:white"><a href="Content writing.php">Content Writing</a></li>
+              <li style="color:white"><a href="Photography.php">Photography</a></li>
+              <li style="color:white"><a href="Quiz.php">Quiz</a></li>
+              <li style="color:white"><a href="E-Crush pods.php">Podcasting</a></li>
+              <li style="color:white"><a href="web development.php">Web Development</a></li>
+              <li style="color:white"><a href="Desiging team.php">Desiging</a></li>
+              <li style="color:white"><a href="Promotion & marketing.php">Promotions & Marketing</a></li>
+              <li style="color:white"><a href="Technical.php">Technical</a></li>
+              <li style="color:white"><a href="Infra team.php">Infra Team</a></li>
             </ul>
         </li>
-        <li class="navElement"><a href="contact.html" id="navElement">Contact Us</a></li>
+        <li class="navElement"><a href="contact.php" id="navElement">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <a href="login.html" class="get-started-btn">NEWS PAPER&nbsp;<span>&rarr;</span></a>
+    <a href="login.php" class="get-started-btn">NEWS PAPER&nbsp;<span>&rarr;</span></a>
     </div>
   </header>
 <!--End Change -->
@@ -192,7 +192,7 @@
             </ul>
             <p>
               We provide you a platform to learn many helpful things. We spread knowledge of English to all students of
-              the campus by our daily activities, events, sessions, talks and many more...&nbsp;<a href="about.html"  style="font-weight:bold;font-size:17px; color:093f5b;">read more&nbsp;<span>&rarr;</span></a> </p>.</p>
+              the campus by our daily activities, events, sessions, talks and many more...&nbsp;<a href="about.php"  style="font-weight:bold;font-size:17px; color:093f5b;">read more&nbsp;<span>&rarr;</span></a> </p>.</p>
           </div>
         </div>
 
@@ -264,7 +264,7 @@
                       <p class="card-text">
                         Explore through the shelves of our library...
                       </p>
-                      <a href="E-library.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="E-library.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
                     </div>
                   </div>
                 </div>
@@ -285,7 +285,7 @@
                         Enhance skills into strongest weapons...
                       </p>
                      
-                      <a href="E-skills.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="E-skills.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -307,7 +307,7 @@
                       <p class="card-text">
                         Improves you in eloquence and fluency...
                       </p>
-                      <a href="Soft Skill & Communication.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="Soft Skill & Communication.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
           
                     </div>
                   </div>
@@ -331,7 +331,7 @@
                          Build a pavement for your voice and visions...
                       </p>
 
-                      <a href="Content writing.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="Content writing.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -354,7 +354,7 @@
                         Captures our charming moments...
                       </p>
                     
-                     <a href="Photography.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                     <a href="Photography.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -378,7 +378,7 @@
                         Unlocks your knowledge and skills...
                       </p>
                     
-                      <a href="Quiz.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="Quiz.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -401,7 +401,7 @@
                         This team works on giving voice over... 
                       </p>
                    
-                      <a href="E-Crush pods.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="E-Crush pods.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -425,7 +425,7 @@
                         We make progress with lines of code...
                       </p>
                     
-                      <a href="web development.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="web development.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
                     </div>
                   </div>
                 </div>
@@ -447,7 +447,7 @@
                         Your creativity maintains our dignity...
                       </p>
                 
-                      <a href="Desiging team.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="Desiging team.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -470,7 +470,7 @@
                         Brings us together through technology...
                       </p>
                     
-                     <a href="Technical.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                     <a href="Technical.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                     </div>
                   </div>
@@ -491,7 +491,7 @@
                       <p class="card-text">
                         Best way to connect and reach you...
                       </p>
-                      <a href="Promotion & marketing.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="Promotion & marketing.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
                       
                     </div>
@@ -514,7 +514,7 @@
                         We teach you real-time dedication...
                       </p>
                    
-                      <a href="Infra team.html"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
+                      <a href="Infra team.php"><button class="card-btn">Visit <span>&rarr;</span></button></a> 
 
 
                     </div>
@@ -543,7 +543,7 @@
           <div class="row" >
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <a href="course-details1.html">
+              <a href="course-details1.php">
               <div class="course-item">
                 <img src="assets/img/courses/spoken english.webp"
                   class="img-fluid" alt="...">
@@ -553,7 +553,7 @@
                     <p class="price">Free</p>
                   </div>
 
-                  <h3><a href="course-details1.html">Spoken English Classes</a></h3>
+                  <h3><a href="course-details1.php">Spoken English Classes</a></h3>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This course provides you the content for learning English and you'll be taught how to apply it in your daily communication.<br><br></p>
                   <div class="trainer d-flex justify-content-between align-items-center">
                     <div class="trainer-profile d-flex align-items-center">
@@ -574,7 +574,7 @@
             </div> <!-- End Course Item-->
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-              <a href="course-details2.html">
+              <a href="course-details2.php">
                 <div class="course-item">
                 <img src="assets/img/courses/E grammar.webp"
                   class="img-fluid" alt="...">
@@ -584,7 +584,7 @@
                     <p class="price">Free</p>
                   </div>
 
-                  <h3><a href="course-details2.html">English Grammar</a></h3>
+                  <h3><a href="course-details2.php">English Grammar</a></h3>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grammar is the basic structure of any language. This course introduces you the different aspects of grammar in English language.</p>
                  
                   <div class="trainer d-flex justify-content-between align-items-center">
@@ -606,7 +606,7 @@
             </div> <!-- End Course Item-->
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-              <a href="course-details3.html">
+              <a href="course-details3.php">
               <div class="course-item">
                 <img src="assets/img/courses/Airforce.webp"
                   class="img-fluid" alt="...">
@@ -616,7 +616,7 @@
                     <p class="price">Free</p>
                   </div>
 
-                  <h3><a href="course-details3.html">Indian Air Force</a></h3>
+                  <h3><a href="course-details3.php">Indian Air Force</a></h3>
                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This course helps many students and aspirants in learning English required for cracking IAF examination.<br></p>
                  <br> <div class="trainer d-flex justify-content-between align-items-center">
                     <div class="trainer-profile d-flex align-items-center">
@@ -638,7 +638,7 @@
 
           </div>
        <br>
-          <h2 class="coursetext"><a href="courses.html">Explore more<span>&rarr;</span></a></h2>
+          <h2 class="coursetext"><a href="courses.php">Explore more<span>&rarr;</span></a></h2>
         </div>
     
       
@@ -839,21 +839,21 @@ Andhra Pradesh - 521202<br><br>
           <h4 class="text-white">Useful Links</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
           <h4 class="text-white">Our Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="E-Library.html">E-Library</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="E-skills.html">E-Skills</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Quiz.html">Quiz</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Soft Skills</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Communtaions Skills</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-Skills</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quiz</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft Skills</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions Skills</a></li>
           </ul>
         </div>
 
@@ -891,7 +891,7 @@ Andhra Pradesh - 521202<br><br>
     <div class="me-md-auto text-center text-md-start">
       <div class="copyright" style="text-align:center;">
         &copy; Copyright <strong><span>E-Crush</span></strong>. All Rights Reserved
-        Designed by <a href="web development.html">Web Team E-Crush</a>
+        Designed by <a href="web development.php">Web Team E-Crush</a>
       </div>
     </div>
   </div>
@@ -905,7 +905,7 @@ Andhra Pradesh - 521202<br><br>
   <div class="text-content">
     <h3>
       Hello Amigos! The new Core Team of the E-Crush has been announced. Please
-    <a href="sebpage.html" style="pointer-events:all">   click here</a> to know more.
+    <a href="sebpage.php" style="pointer-events:all">   click here</a> to know more.
     </h3>
     <p class="author-name">E-Crush</p>
   </div>

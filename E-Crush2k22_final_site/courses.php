@@ -42,52 +42,52 @@
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <!-- <a href="index.html">
+      <!-- <a href="index.php">
         <img style="height:60px; width:70px" src="assets/img/logo.png">
       </a>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1> -->
+      <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
-          <a class="active" href="index.html" id="navElement">Home</a>
+          <a class="active" href="index.php" id="navElement">Home</a>
         </li>
         <li class="navElement">
-          <a href="about.html" id="navElement">About</a>
+          <a href="about.php" id="navElement">About</a>
         </li>
         <li class="navElement">
-          <a href="trainers.html" id="navElement">Weekend Trivia</a>
+          <a href="trainers.php" id="navElement">Weekend Trivia</a>
         </li>
         <li class="navElement">
-          <a href="courses.html" id="navElement">Courses</a>
+          <a href="courses.php" id="navElement">Courses</a>
         </li>
         <li class="navElement">
-          <a href="events.html" id="navElement">Events</a>
+          <a href="events.php" id="navElement">Events</a>
         </li>
         <li class="dropdown">
           <a href="#" id="navElement"><span>Clubs</span> 
             <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li style="color:white"><a href="web development.html">Web development</a></li>
-              <li style="color:white"><a href="E-Crush pods.html">E-Crush pods</a></li>
-              <li style="color:white"><a href="Promotion & marketing.html">Promotion & marketing</a></li>
-              <li style="color:white"><a href="Quiz.html">Quiz</a></li>
-              <li style="color:white"><a href="Technical.html">Technical</a></li>
-              <li style="color:white"><a href="Content writing.html">Content writing</a></li>
-              <li style="color:white"><a href="Soft Skill & Communication.html">Soft Skill & Communication</a></li>
-              <li style="color:white"><a href="Infra team.html">Infra team</a></li>
-              <li style="color:white"><a href="Desiging team.html">Desiging team</a></li>
-              <li style="color:white"><a href="E-skills.html">E-skills</a></li>
-              <li style="color:white"><a href="Photography.html">Photography</a></li>
-              <li style="color:white"><a href="E-Library.html">E-Library</a></li>
+              <li style="color:white"><a href="web development.php">Web development</a></li>
+              <li style="color:white"><a href="E-Crush pods.php">E-Crush pods</a></li>
+              <li style="color:white"><a href="Promotion & marketing.php">Promotion & marketing</a></li>
+              <li style="color:white"><a href="Quiz.php">Quiz</a></li>
+              <li style="color:white"><a href="Technical.php">Technical</a></li>
+              <li style="color:white"><a href="Content writing.php">Content writing</a></li>
+              <li style="color:white"><a href="Soft Skill & Communication.php">Soft Skill & Communication</a></li>
+              <li style="color:white"><a href="Infra team.php">Infra team</a></li>
+              <li style="color:white"><a href="Desiging team.php">Desiging team</a></li>
+              <li style="color:white"><a href="E-skills.php">E-skills</a></li>
+              <li style="color:white"><a href="Photography.php">Photography</a></li>
+              <li style="color:white"><a href="E-Library.php">E-Library</a></li>
             </ul>
         </li>
-        <li class="navElement"><a href="contact.html" id="navElement">Contact</a></li>
+        <li class="navElement"><a href="contact.php" id="navElement">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
-    <a href="login.html" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
+    <a href="login.php" class="get-started-btn">News Paper&nbsp;<span>&rarr;</span></a>
     </div>
   </header>
   <!-- End Header -->
@@ -105,7 +105,7 @@
       <nav>
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li>Courses</li>
           </ol>
         </div>
@@ -119,7 +119,7 @@
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a href="course-details1.html">
+            <a href="course-details1.php">
               <div class="course-item">
                 <img src="assets/img/courses/Spoken english.webp" class="img-fluid" alt="">
                 <div class="course-content">
@@ -128,7 +128,7 @@
                     <p class="price">Free</p>
                   </div>
 
-                  <h3><a href="course-details1.html">Spoken English classes</a></h3>
+                  <h3><a href="course-details1.php">Spoken English classes</a></h3>
                   <p>This course provides you the content for learning English and how to apply it for daily communication.</p>
                   <div class="trainer d-flex justify-content-between align-items-center">
                     <div class="trainer-profile d-flex align-items-center">
@@ -149,7 +149,7 @@
           </div> <!-- End Course Item-->
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <a href="course-details2.html">
+            <a href="course-details2.php">
               <div class="course-item">
               <img src="assets/img/courses/E grammar.webp"
                 class="img-fluid" alt="...">
@@ -159,7 +159,7 @@
                   <p class="price">free</p>
                 </div>
 
-                <h3><a href="course-details2.html">ENGLISH GRAMMAR</a></h3>
+                <h3><a href="course-details2.php">ENGLISH GRAMMAR</a></h3>
                 <p>Grammar is the basic structure of any language.This course introduces to the different aspects of grammar in English language. </p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -183,7 +183,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
            
-            <a href="course-details3.html">
+            <a href="course-details3.php">
               <div class="course-item">
                 <img src="assets/img/courses/Airforce.webp"
                   class="img-fluid" alt="...">
@@ -193,7 +193,7 @@
                     <p class="price">free</p>
                   </div>
 
-                  <h3><a href="course-details3.html">INDIAN AIR FORCE</a></h3>
+                  <h3><a href="course-details3.php">INDIAN AIR FORCE</a></h3>
                   <p> This course helps many students and aspirants in learning English which is helpful for cracking competetive examinations like IAF. </p>
                   <div class="trainer d-flex justify-content-between align-items-center">
                     <div class="trainer-profile d-flex align-items-center">
@@ -215,7 +215,7 @@
           </div> <!-- End Course Item-->
           
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a href="course-details4.html">
+            <a href="course-details4.php">
               <div class="course-item">
                 <img src="assets/img/courses/AA course.webp"
                   class="img-fluid" alt="...">
@@ -225,7 +225,7 @@
                     <p class="price">Free</p>
                   </div>
 
-                  <h3><a href="course-details4.html"> A..AA... PLAYLIST</a></h3>
+                  <h3><a href="course-details4.php"> A..AA... PLAYLIST</a></h3>
                   <p>In this course,you'll be learning English language from scratch.This course is helpful for many beginners where you'll learn English from very basic level. </p>
                   <div class="trainer d-flex justify-content-between align-items-center">
                     <div class="trainer-profile d-flex align-items-center">
@@ -249,7 +249,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
            
-            <a href="course-details5.html">
+            <a href="course-details5.php">
               <div class="course-item">
                 <img src="assets/img/courses/PUC 2 Content.webp"
                   class="img-fluid" alt="...">
@@ -259,7 +259,7 @@
                     <p class="price">free</p>
                   </div>
 
-                  <h3><a href="course-details5.html">PUC courses</a></h3>
+                  <h3><a href="course-details5.php">PUC courses</a></h3>
                   <p>This course provides you the best content for PUC.<br><br><br></p>
                   <div class="trainer d-flex justify-content-between align-items-center">
                     <div class="trainer-profile d-flex align-items-center">
@@ -315,21 +315,21 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
             </ul>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.html">E-Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.html">E-skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.html">Quizs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Soft skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.html">Communtaions skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quizs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions skills</a></li>
             </ul>
           </div>
   
@@ -356,7 +356,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="web development.html">Web Team Ecrush</a>
+          Designed by <a href="web development.php">Web Team Ecrush</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
