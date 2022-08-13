@@ -1,0 +1,302 @@
+.contactcard {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .rows {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .concard {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #0e9ab3 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .icon-wrapper {
+    background-color: #0e9ab3;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .concard:hover {
+    background-position: 0 97%;
+  }
+  .concard:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #0e9ab3;
+  }
+  .concard:hover h3 {
+    color: #ffffff;
+  }
+  .concard:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    .contactcard {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+   .contactcard {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+  .contact .info {
+    width: 100%;
+    background: #f2f3f7;
+  }
+  .contact .info i {
+    font-size: 20px;
+    color: #0e9ab3;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #ecf9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #37423b;
+  }
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #657a6d;
+  }
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .contactus
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  @media (max-width:992px){
+    #contact{
+      width:100%;
+    }
+  }
+
+   .contactcontainer{
+    z-index: 12;
+    max-width: 1050px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+    /* margin-top: 40px; */
+    position: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      /* height: 100vh; */
+    /* width: 100%; */
+  
+    align-items: center;
+    /* justify-content: center; */
+  
+    position: relative;
+  }
+  .contactcontainer .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+  .content .image-box{
+    max-width: 55%;
+  }
+  .content .image-box img{
+    width: 100%;
+  }
+  .content .topic{
+    font-size: 22px;
+    font-weight: 500;
+    color:  #0e9ab3;
+  }
+  .content form{
+    width: 40%;
+    margin-right: 30px;
+  }
+  .content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+  }
+  .content .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    /* background: #0e9ab3; */
+    
+background: rgba(14, 154, 179, 0.2);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  .content .input-box input:focus,
+  .content .input-box input:valid{
+    border-color:  #093f5b;
+    background-color: #fff;
+  }
+  .content .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  .content .input-box input:focus ~ label,
+  .content .input-box input:valid ~ label{
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color:  #0e9ab3;
+    
+background: rgba(14, 154, 179, 0.2);
+    background: #fff;
+  }
+  .content .message-box{
+    min-height: 100px;
+    position: relative;
+  }
+  .content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    /* background: #0e9ab3; */
+    
+background: rgba(14, 154, 179, 0.2);
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    /* transition  all 0.3s ease; */
+  }
+  .content .message-box textarea:focus{
+    /* border-color:  #0E9AB3; */
+    
+background: rgba(14, 154, 179, 0.2);
+    background-color: #fff;
+  }
+  .content .message-box label{
+    position: absolute;
+    font-size: 16px;
+    color: #636c72;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .content .message-box textarea:focus ~ label{
+    left: 12px;
+    top: -10px;
+    color:  #093f5b;
+    font-size: 14px;
+    background: #fff;
+  }
+  .content .input-box input[type="submit"]{
+    color: #fff;
+    background:  #0E9AB3;
+    
+/* background: rgba(14, 154, 179, 0.2); */
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  .content .input-box input[type="submit"]:hover{
+    background-color:black;
+  }
+  @media (max-width:1000px) {
+    .content .image-box{
+      max-width: 70%;
+    }
+    .content{
+      padding: 10px 0;
+    }
+  }
+  @media (max-width:900px) {
+    .content .image-box{
+      display: none;
+      box-sizing: border-box;
+    }
+    .content form{
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
