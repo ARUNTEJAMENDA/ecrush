@@ -1,6 +1,5 @@
 <?php
-    // session_start();
-    // if($_SESSION('code')=="@#%%+53"){
+    if($_SESSION('code')=="@#%%+53"){
         include "../php/config.php";
         $query = $_POST['query'];
         if (mysqli_query($con,$query)){
@@ -8,5 +7,5 @@
         }else{
             echo "problem in query_runner-api";
         }
-    // }
+    }
 ?>
