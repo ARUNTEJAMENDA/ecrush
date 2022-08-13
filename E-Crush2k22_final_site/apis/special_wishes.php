@@ -1,10 +1,10 @@
 <?php 
  
  include "../php/config.php";
-
-if(isset($_POST['submit'])){
     $name = mysqli_real_escape_string($con,$_POST['name']);
     $date = mysqli_real_escape_string($con,$_POST['date']);
+    $active = mysqli_real_escape_string($con,$_POST['active']);
+    echo "<br>".$date.".<br>".$active.".<br>";
     $image1 = "";
     $image2 = "";
     $image3 = "";
@@ -15,7 +15,8 @@ if(isset($_POST['submit'])){
 
 
     $errors = array();
-    $datetime = date("YmdHis");
+    // $datetime = date("YmdHis");
+    $datetime="_";
     $extensions = array("jpeg","jpg","png");
 
     // Inserting the file and user data to database
@@ -78,13 +79,13 @@ if(isset($_POST['submit'])){
         move_uploaded_file($img2_tmp,"../uploads/".$image2);
         move_uploaded_file($img3_tmp,"../uploads/".$image3);
             
-            $sql = "INSERT INTO special_wishes(name, date, file1_name, file2_name, file3_name, active) VALUES('$name','$date','$image1','$image2','$image3',1)";
+            $sql = "INSERT INTO `special_wishes` (`name`, `date`, `file1_name`, `file2_name`, `file3_name`, `active`) VALUES ('$name','$date','$image1','$image2','$image3','$active')";
             // mysqli_query($conn, $sql1) or die("Error to insert, Hero data!");
-            
             if(mysqli_query($con, $sql)){
                 // $_SESSION['success_s'] = "Post is sent!";
                 // header("location: ../services.php");
                 echo "Success";
+                header("location:../admin.php");
                 
 
             }else{
@@ -102,13 +103,4 @@ if(isset($_POST['submit'])){
         //     header("location: ../services.php");
         die();
     }
-    
-}
-
-
-
-
-
-
-
 ?>
