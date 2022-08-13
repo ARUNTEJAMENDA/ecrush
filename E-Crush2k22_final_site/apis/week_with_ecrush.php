@@ -2,6 +2,7 @@
      include "../php/config.php";
     $name = mysqli_real_escape_string($con,$_POST['name']);
     $date = mysqli_real_escape_string($con,$_POST['date']);
+    $active = mysqli_real_escape_string($con,$_POST['active']);
     // echo $name.".<br>".$date.".<br>";
     $image1 = "";
     $image2 = "";
@@ -78,7 +79,7 @@
         move_uploaded_file($img2_tmp,"../uploads/".$image2);
         move_uploaded_file($img3_tmp,"../uploads/".$image3);
             
-            $sql = "INSERT INTO week_with_ecrush(`name`, `date`, `file1_name`, `file2_name`, `file3_name`) VALUES('$name','$date','$image1','$image2','$image3')";
+            $sql = "INSERT INTO week_with_ecrush(`name`, `date`, `file1_name`, `file2_name`, `file3_name`,`active`) VALUES('$name','$date','$image1','$image2','$image3','$active')";
             // mysqli_query($conn, $sql1) or die("Error to insert, Hero data!");
             
             if(mysqli_query($con, $sql)){

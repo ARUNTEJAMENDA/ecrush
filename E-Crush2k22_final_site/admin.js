@@ -41,4 +41,31 @@ $(document).ready(function(){
             alert("option not valid!!");
         }
     });
+    $(".deactivate").click(function(){
+        var tname = this.id;
+        $.ajax({
+            url:"apis/deactive.php",
+            method: "post",
+            data:{table_name:tname},
+            success: function(response){
+                alert(response);
+                location.reload();
+                // location.replace("admin.php");
+            }
+        });
+    });
+    $(".activate").click(function(){
+        var tname = this.id;
+        var sno = $("#"+tname+"_activate").val();
+        $.ajax({
+            url:"apis/active.php",
+            method: "post",
+            data:{table_name:tname,sno:sno},
+            success: function(response){
+                alert(response);
+                location.reload();
+                // location.replace("admin.php");
+            }
+        });
+    });
 })

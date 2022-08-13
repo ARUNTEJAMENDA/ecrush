@@ -1,5 +1,5 @@
 <?php
-    include "config.php";
+    include "../php/config.php";
     $date = $_POST['date'];
     $message = $_POST['message'];
     $q1 = "INSERT INTO `suggestions` (`date`,`message`) values ('$date','$message')";

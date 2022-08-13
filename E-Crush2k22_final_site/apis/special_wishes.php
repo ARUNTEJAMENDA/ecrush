@@ -85,7 +85,7 @@
                 // $_SESSION['success_s'] = "Post is sent!";
                 // header("location: ../services.php");
                 echo "Success";
-                header("location:../admin.php");
+                header("location:../admin.php#special_wishes");
                 
 
             }else{

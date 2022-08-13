@@ -33,12 +33,13 @@
     <h1>1.WEEK WITH ECRUSH</h1>
     <h2>daily posts</h2>
     <form action="apis/week_with_ecrush.php" method="post" enctype="multipart/form-data">
-        <table>
+        <br><table>
             <tr><td>Name:</td><td><input required type="text" name="name"></td></tr>
             <tr><td>Date:</td><td><input required type="date" name="date"></td></tr>
             <tr><td>file1:</td><td><input required type="file" name="img1"></td></tr>
             <tr><td>file2:</td><td><input required type="file" name="img2"></td></tr>
             <tr><td>file3:</td><td><input required type="file" name="img3"></td></tr>
+            <tr><td>active:</td><td><input required type="text" name="active"></td></tr>
         </table>
         <button name="osubmit" type="submit" value="submit">submit</button>
     </form>
@@ -47,7 +48,7 @@
         $q1ex = $con->query("SELECT * FROM `week_with_ecrush`");$q1c = $q1ex->num_rows;
         $options1 = "<option>select</option>";
         //-------
-        echo '<table><tr><th>s.no</th><th>name</th><th>date</th><th>file1</th><th>file2</th><th>file3</th></tr>';
+        echo '<br><table><tr><th>s.no</th><th>name</th><th>date</th><th>file1</th><th>file2</th><th>file3</th><th>active</th></tr>';
         $q1 = "SELECT * FROM `week_with_ecrush`";
         $ex1 = mysqli_query($con,$q1);
         while($row = mysqli_fetch_assoc($ex1)){
@@ -58,22 +59,27 @@
                     <td>".$row["file1_name"]."</td>
                     <td>".$row["file2_name"]."</td>
                     <td>".$row["file3_name"]."</td>
+                    <td>".$row["active"]."</td>
                 </tr>";
             $options1 = $options1."<option>".$row["sno"]."</option>";
         }
         echo "</table>
-        <br>
-        <label>Delete Sno. : </label>
-        <select id='week_with_ecrush_option'>
+        <br><label>Delete Sno. : </label><select id='week_with_ecrush_option'>".$options1."</select><button id='week_with_ecrush' class=\"del\"'>Delete</button>
+        <br><br>
+        <button id='week_with_ecrush' class='deactivate'>Deactivate All</button>
+        <br><br>
+        <label>Activate Sno. : </label>
+        <select id='week_with_ecrush_activate'>
             ".$options1."
         </select>
-        <button id='week_with_ecrush' class=\"del\"'>Delete</button>";
+        <button id='week_with_ecrush' class='activate'>Activate</button>
+        ";
     ?>
     <hr>
     <!-- ------------------------------------------- -->
     <h1>2. SPECIAL WISHES</h1>
     <form action="apis/special_wishes.php" method="post" enctype="multipart/form-data">
-        <table>
+        <br><table>
             <tr><td>Name:</td><td><input required name="name" type="text" ></td></tr>
             <tr><td>Date:</td><td><input required name="date" type="date" ></td></tr>
             <tr><td>file1:</td><td><input required name="img1" type="file" ></td></tr>
@@ -87,7 +93,7 @@
             $q2ex = $con->query("SELECT * FROM `special_wishes`");$q2c = $q2ex->num_rows;
             $options2 = "<option>select</option>";
             //----------------
-            echo '<table><tr><th>s.no</th><th>name</th><th>date</th><th>file1</th><th>file2</th><th>file3</th><th>active</th></tr>';
+            echo '<br><table id="special_wishes"><tr><th>s.no</th><th>name</th><th>date</th><th>file1</th><th>file2</th><th>file3</th><th>active</th></tr>';
             $q2 = "SELECT * FROM `special_wishes`";
             $ex2 =mysqli_query($con,$q2);
             while($row = mysqli_fetch_assoc($ex2)){
@@ -102,18 +108,23 @@
                     </tr>";
                 $options2 = $options2."<option>".$row["sno"]."</option>";
             }
-            echo "</table><br>
-            <label>Delete Sno. : </label>
-            <select id='special_wishes_option'>
+            echo "</table>
+            <br><label>Delete Sno. : </label><select id='special_wishes_option'>".$options2."</select><button id='special_wishes' class=\"del\"'>Delete</button>
+            <br><br>
+            <button id='special_wishes' class='deactivate'>Deactivate All</button>
+            <br><br>
+            <label>Activate Sno. : </label>
+            <select id='special_wishes_activate'>
                 ".$options2."
             </select>
-            <button id='special_wishes' class=\"del\"'>Delete</button>";
+            <button id='special_wishes' class='activate'>Activate</button>
+            ";
         ?>
     <!-- ------------------------------------------- -->
     <hr>
     <h1 id="weekend_trivia">3. WEEKEND TRIVIA</h1>
     <form action="apis/weekend_trivia.php" method="post" enctype="multipart/form-data">
-        <table>
+        <br><table>
             <tr><td>NAME OF THE WEEK:</td><td><input name="name" required type="text"></td></tr>
             <tr><td>DATE:</td><td><input required name="date" type="date"></td></tr>
             <tr><td>LINK:</td><td><input required name="link" type="text"></td></tr>
@@ -128,7 +139,7 @@
             $q2ex = $con->query("SELECT * FROM `special_wishes`");$q2c = $q2ex->num_rows;
             $options2 = "<option>select</option>";
             //----------------
-            echo '<table><tr><th>S.NO</th><th>NAME OF THE WEEK</th><th>DATE</th><th>LINK</th><th>WINNER-1</th><th>WINNER-2</th><th>WINNER-3</th><th>active</th></tr>';
+            echo '<br><table><tr><th>S.NO</th><th>NAME OF THE WEEK</th><th>DATE</th><th>LINK</th><th>WINNER-1</th><th>WINNER-2</th><th>WINNER-3</th><th>active</th></tr>';
             $q2 = "SELECT * FROM `weekend_trivia`";
             $ex2 =mysqli_query($con,$q2);
             while($row = mysqli_fetch_assoc($ex2)){
@@ -144,30 +155,34 @@
                     </tr>";
                 $options2 = $options2."<option>".$row["sno"]."</option>";
             }
-            echo "</table><br>
-            <label>Delete Sno. : </label>
-            <select id='weekend_trivia_option'>
+            echo "</table>
+            <br><label>Delete Sno. : </label><select id='weekend_trivia_option'>".$options2."</select><button id='weekend_trivia' class=\"del_data\"'>Delete</button>
+            <br><br>
+            <button id='weekend_trivia' class='deactivate'>Deactivate All</button>
+            <br><br>
+            <label>Activate Sno. : </label>
+            <select id='weekend_trivia_activate'>
                 ".$options2."
             </select>
-            <button id='weekend_trivia' class=\"del_data\"'>Delete</button>";
+            <button id='weekend_trivia' class='activate'>Activate</button>
+            ";
         ?>
-
-    <!-- -------------------------------------------- -->
+            <!-- -------------------------------------------- -->
     <hr>
     <h1 id="notifications">4. NOTIFICATION POP-UP</h1>
-    <form action="notifications.php" method="post" enctype="multipart/form-data">
-        <table>
-            <tr><td>Notification name:</td><td><input required name="name" type="text"></td><br></tr>
-            <tr><td>Date:</td><td><input required name="date"type="text"><br></td></tr>
-            <tr><td>Message:</td><td><input required name="message" type="text"></td><br></tr>
-            <tr><td>Link:</td><td><input required name="link" type="text"></td><br></tr>
-            <tr><td>Active:</td><td><input required name="active" type="text"></td><br></tr>
+    <form action="apis/add_notifications.php" method="post" enctype="multipart/form-data">
+        <br><table>
+            <tr><td>Notification name:</td><td><input required name="name" type="text"></td></tr>
+            <tr><td>Date:</td><td><input required name="date"type="date"></td></tr>
+            <tr><td>Message:</td><td><input required name="message" type="text"></td></tr>
+            <tr><td>Link:</td><td><input required name="link" type="text"></td></tr>
+            <tr><td>Active:</td><td><input required name="active" type="text"></td></tr>
         </table>
         <button name="thsubmit" type="submit" value="submit">submit</button>
     </form>
-    <table>
-        <tr><td>Serial no.</td><td>Notification name</td><td>Date</td><td>Message</td><td>Link</td><td>Active</td><td>Operator</td></tr>
         <?php
+            echo "<br><table><tr><td>Serial no.</td><td>Notification name</td><td>Date</td><td>Message</td><td>Link</td><td>Active</td><td>Operator</td></tr>";
+            $options2 = "<option>select</option>";
             $q4 = "SELECT * FROM `notifications`";
             $ex4 =mysqli_query($con,$q4);
             while($row = mysqli_fetch_assoc($ex4)){
@@ -179,23 +194,35 @@
                         <td>".$row["link"]."</td>
                         <td>".$row["active"]."</td>
                     </tr>";
+                    $options2 = $options2."<option>".$row["sno"]."</option>";
             }
-        ?>            
-    </table>
+            echo "</table>
+                <br><label>Delete Sno. : </label><select id='notifications_option'>".$options2."</select><button id='notifications' class=\"del_data\"'>Delete</button>
+                <br><br>
+                <button id='notifications' class='deactivate'>Deactivate All</button>
+                <br><br>
+                <label>Activate Sno. : </label>
+                <select id='notifications_activate'>
+                    ".$options2."
+                </select>
+                <button id='notifications' class='activate'>Activate</button>
+                ";
+                ?>
 <!-- ------------------------------------------------------- -->
+<hr>
     <h1>5.CONTACT FORM</h1>
-    <form action="contact_form.php" method="post" enctype="multipart/form-data">
-        <table>
-            <tr><td>Name:</td><td><input required type="text"></td><br></tr>
-            <tr><td>Date:</td><td><input required type="text"><br></td></tr>
-            <tr><td>Message:</td><td><input required type="text"></td><br></tr>
-            <tr><td>Mail:</td><td><input required type="text"></td><br></tr>
+    <!-- <form action="contact_form.php" method="post" enctype="multipart/form-data">
+        <br><table>
+            <tr><td>Name:</td><td><input required type="text" ></td></tr>
+            <tr><td>Date:</td><td><input required type="date"></td></tr>
+            <tr><td>Message:</td><td><input required type="text"></td></tr>
+            <tr><td>Mail:</td><td><input required type="text"></td></tr>
         </table>
         <button name="thsubmit" type="submit" value="submit">submit</button>
-    </form>
-    <table>
-        <tr><td>Serial no.</td><td>Name</td><td>Date</td><td>Message</td><td>Mail</td><td>Operator</td></tr>
+    </form> -->
         <?php
+            echo "<br><table><tr><td>Serial no.</td><td>Name</td><td>Date</td><td>Message</td><td>Mail</td><td>Operator</td></tr>";
+            $options2 = "<option>select</option>";
             $q5 = "SELECT * FROM `contact_form`";
             $ex5 =mysqli_query($con,$q5);
             while($row = mysqli_fetch_assoc($ex5)){
@@ -206,23 +233,29 @@
                         <td>".$row["message"]."</td>
                         <td>".$row["email"]."</td>
                     </tr>";
-            }
+                    $options2 = $options2."<option>".$row["sno"]."</option>";
+                }
+            echo "</table>
+                <br><label>Delete Sno. : </label>
+                <select id='contact_form_option'>
+                    ".$options2."
+                </select>
+                <button id='contact_form' class=\"del_data\"'>Delete</button>";
         ?>
-    </table>
     <!-- ------------------------------------------------- -->
     <hr>
     <h1>6. SUGGESTION</h1>
-    <form action="suggestions.php" method="post" enctype="multipart/form-data">
-        <table>
-            <tr><td>Date:</td><td><input required type="text"><br></td></tr>
-            <tr><td>Message:</td><td><input required type="text"></td><br></tr>
+    <!-- <form action="suggestions.php" method="post" enctype="multipart/form-data">
+        <br><table>
+            <tr><td>Date:</td><td><input required type="text"></td></tr>
+            <tr><td>Message:</td><td><input required type="text"></td></tr>
         </table>
-        <button name="thsubmit" type="submit" value="submit">submit</button>
-    </form>
-    <table>
-        <tr><td>Serial no.</td><td>Date</td><td>Message</td><td>Operator</td></tr>
+        <button  name="thsubmit" type="submit" value="submit">submit</button>
+    </form> -->
         <?php
+            echo "<br><table><tr><td>Serial no.</td><td>Date</td><td>Message</td><td>Operator</td></tr>";
             $q6 = "SELECT * FROM `suggestions`";
+            $options2 = "<option>select</option>";
             $ex6 =mysqli_query($con,$q6);
             while($row = mysqli_fetch_assoc($ex6)){
                 echo "<tr>
@@ -230,9 +263,15 @@
                         <td>".$row["date"]."</td>
                         <td>".$row["message"]."</td>
                     </tr>";
-            }
+                    $options2 = $options2."<option>".$row["sno"]."</option>";
+                }
+            echo "</table>
+                <br><label>Delete Sno. : </label>
+                <select id='suggestions_option'>
+                    ".$options2."
+                </select>
+                <button id='suggestions' class=\"del_data\"'>Delete</button>";
         ?>
-    </table>
     <!-- ------------------------------------------------- -->
 </body>
 </html>
