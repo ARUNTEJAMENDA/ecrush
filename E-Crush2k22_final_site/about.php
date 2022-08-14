@@ -1,3 +1,5 @@
+<?php include "php/config.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +10,7 @@
     <title>about | E-Crush </title>
     <meta content="" name="description">
     <meta content="" name=""> 
-    <?php include "php/config.php";include "repeats/dumpyard.php";?>
+    <?php include "repeats/dumpyard.php";?>
     <link href="assets/css/about.css" rel="stylesheet">
 </head>
 
@@ -213,82 +215,7 @@
    
    
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-  
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>E-Crush</h4>
-            <p>
-              i3 , <br>
-              Rgukt-Nuzvid,<br>
-              krishna,<br><br>
-              <strong>Phone:</strong> +91 9398848215<br>
-              <strong>Email:</strong>ecrushrgukt@gmail.com<br>
-            </p>
-          </div>
-  
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.php">About</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact us</a></li>
-            </ul>
-          </div>
-  
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-Library.php">E-Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="E-skills.php">E-skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Quiz.php">Quizs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Soft skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Soft skill & communication.php">Communtaions skills</a></li>
-            </ul>
-          </div>
-  
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Comment us</h4>
-            <p>Give your valuable suggestions</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="send">
-            </form>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  
-    <div class="container d-md-flex py-4">
-  
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>E-Crush</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="web development.php">Web Team Ecrush</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <div class="icons">
-          <a href="https://www.youtube.com/channel/UCG7OmgaVdsa0QASdBsHNo-w" class="yt"><i class="fa fa-youtube"></i></a>
-          <a href="https://www.facebook.com/ecrush.rgukt.9" class="fb"><i class="fa fa-facebook-f"></i></a>
-          <a href="https://twitter.com/ERgukt?s=08" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="https://instagram.com/ecrushrguktn?utm_medium=copy_link" class="insta"><i class="fa fa-instagram"></i></a>
-          <a href="http://www.linkedin.com/in/ecrush-rguktn" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php include "repeats/footer.php"?>
   <!-- End Footer -->
 
   <div id="preloader"></div>
