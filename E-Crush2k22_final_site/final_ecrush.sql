@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2022 at 02:52 PM
+-- Generation Time: Aug 14, 2022 at 04:46 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -104,7 +104,8 @@ CREATE TABLE `weekend_trivia` (
   `winner1` varchar(255) DEFAULT NULL,
   `winner2` varchar(255) DEFAULT NULL,
   `winner3` varchar(255) DEFAULT NULL,
-  `active` varchar(255) NOT NULL
+  `active` varchar(255) NOT NULL,
+  `winners_display` varchar(255) NOT NULL DEFAULT 'no'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -189,7 +190,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `special_wishes`
@@ -207,7 +208,7 @@ ALTER TABLE `suggestions`
 -- AUTO_INCREMENT for table `weekend_trivia`
 --
 ALTER TABLE `weekend_trivia`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `week_with_ecrush`
