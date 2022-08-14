@@ -1,14 +1,14 @@
 <?php
-    include "php/config.php";
-    if ($con){
-        echo "🥰Happy Vibes onn..!!<hr>";
-    }
-    else{
-        // echo "<script>alert('not connected')</script>";
-    }
-
-?>
-    
+    session_start();
+    if(isset($_SESSION['code'])){
+        include "php/config.php";
+        if ($con){
+            echo "🥰Happy Vibes onn..!!<hr>";
+        }
+        else{
+            // echo "<script>alert('not connected')</script>";
+        }
+?>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +38,7 @@
     </style>
 </head>
 <body>
+    <a href="admin/logout.php">logout</a>
     <h1>1.WEEK WITH ECRUSH</h1>
     <h2>daily posts</h2>
     <form action="apis/week_with_ecrush.php" method="post" enctype="multipart/form-data">
@@ -146,7 +147,7 @@
             $q2ex = $con->query("SELECT * FROM `special_wishes`");$q2c = $q2ex->num_rows;
             $options2 = "<option>select</option>";
             //----------------
-            echo '<br><table id="week_table"><tr><th>S.NO</th><th>NAME OF THE WEEK</th><th>DATE</th><th>LINK</th><th>WINNER-1</th><th>WINNER-2</th><th>WINNER-3</th><th>active</th></tr>';
+            echo '<br><table id="week_table"><tr><th>S.NO</th><th>NAME OF THE WEEK</th><th>DATE</th><th>LINK</th><th>WINNER-1</th><th>WINNER-2</th><th>WINNER-3</th><th>link active</th><th>winners display</th></tr>';
             $q2 = "SELECT * FROM `weekend_trivia`";
             $ex2 =mysqli_query($con,$q2);
             while($row = mysqli_fetch_assoc($ex2)){
@@ -159,6 +160,7 @@
                         <td>".$row["winner2"]."</td>
                         <td>".$row["winner3"]."</td>
                         <td>".$row["active"]."</td>
+                        <td>".$row["winners_display"]."</td>
                     </tr>";
                 $options2 = $options2."<option>".$row["sno"]."</option>";
             }
@@ -172,14 +174,21 @@
                 ".$options2."
             </select>
             <button id='weekend_trivia' class='activate'>Activate</button>
+            <br><br>
+            <label>Display Winners Sno. : </label>
+            <select id='winners_sno'>
+                ".$options2."
+            </select>
+            <button id='weekend_trivia' class='display'>Activate</button>
             ";
         ?>
         <br>
         <br>
             <table>
                 <tr><th>Sno.</th><th colspan="3">Update winners</th></tr>
-                <tr><td rowspan="4"><?php echo "<select id='winners_sno' name='winners_sno'>".$options2."</select>";?></td></tr>
-                <tr><td>WINNER-1(format:name_id_clg):</td><td><input required id="winner1" name="winner1" type="text" placeholder="name_id_college"></td><td rowspan="3"><button id="update_winners">Update winners</button></td></tr>
+                <tr><td rowspan="5"><?php echo "<select id='winners_sno' name='winners_sno'>".$options2."</select>";?></td></tr>
+                <tr><td colspan="2"><span class="danger">**format is must and should!! otherwise winners will not be displayed (ex: studentname_1x0574_rgukt)</span></td><td rowspan="4"><button id="update_winners">Update winners</button></td></tr>
+                <tr><td>WINNER-1(format:name_id_clg):</td><td><input required id="winner1" name="winner1" type="text" placeholder="name_id_college"></td></tr>
                 <tr><td>WINNER-2(format:name_id_clg):</td><td><input required id="winner2" name="winner2" type="text" placeholder="name_id_college"></td></tr>
                 <tr><td>WINNER-3(format:name_id_clg):</td><td><input required id="winner3" name="winner3" type="text" placeholder="name_id_college"></td></tr>
             </table>
@@ -304,5 +313,10 @@ truncate table `notifications`;
 alter table `notifications` auto_increment = 0;
 truncate table `contact_form`;
 alter table `contact_form` auto_increment = 0;
-
- -->
+-->
+<?php
+}else{
+    echo "you cant pass me.";
+    header("refresh:2,index.php");
+}
+?>

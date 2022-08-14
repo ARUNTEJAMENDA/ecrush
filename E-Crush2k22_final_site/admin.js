@@ -90,4 +90,18 @@ $(document).ready(function(){
             $("winners_sno").css("border","2px solid red");
         }
     });
+    $(".display").click(function(){
+        var tname = this.id;
+        var sno = $("#winners_sno").val();
+        $.ajax({
+            url:"apis/display.php",
+            method: "post",
+            data:{table_name:tname,sno:sno},
+            success: function(response){
+                alert(response);
+                location.reload();
+                // location.replace("admin.php");
+            }
+        });
+    });
 })
