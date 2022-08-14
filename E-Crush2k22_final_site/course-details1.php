@@ -98,7 +98,7 @@
 
         <div class="row">
           <div class="col-lg-7">
-            <img src="assets/img/courses/Spoken english.jpg" class="img-fluid" alt="" width="100%" height="280px">
+            <img src="assets/img/courses/Spoken english.webp" class="img-fluid" alt="" width="100%" height="280px">
             <h3>SPOKEN ENGLISH</h3>
           </div>
           <div class="col-lg-4">

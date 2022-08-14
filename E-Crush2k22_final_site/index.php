@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="col-lg-5 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/hero-img.pnghref="  "" class="img-fluid animated" alt="">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -183,9 +183,16 @@
                 Daily Posts
               </div>
               <div class="posts text-center owl-carousel" >
-                <img src="assets/img/trainers/1.webp" alt="">
-                <img src="assets/img/trainers/2.webp" alt="">
-                <!-- <img src="" alt="">-->
+              <?php
+                  $query = "SELECT * FROM `week_with_ecrush` where `active`='yes'";
+                  $exec = mysqli_query($con,$query);
+                  while($row = mysqli_fetch_assoc($exec)){
+                    echo '
+                    <img src="uploads/'.$row['file1_name'].'" alt="">
+                    <img src="uploads/'.$row['file2_name'].'" alt="">
+                    <img src="uploads/'.$row['file3_name'].'" alt="">';
+                  }
+                ?>
               </div>
             </div>
             
@@ -194,9 +201,16 @@
                 Special Wishes
               </div>
               <div class="posts text-center owl-carousel">
-                <img src="assets/img/trainers/1.webp" alt="">
-                <img src="assets/img/trainers/2.webp" alt="">
-                <!-- <img src="" alt="">-->
+              <?php
+                  $query1 = "SELECT * FROM `special_wishes`  where `active`='yes'";
+                  $exec1 = mysqli_query($con,$query1);
+                  while($row = mysqli_fetch_assoc($exec1)){
+                    echo '
+                    <img src="uploads/'.$row['file1_name'].'" alt="">
+                    <img src="uploads/'.$row['file2_name'].'" alt="">
+                    <img src="uploads/'.$row['file3_name'].'" alt="">';
+                  }
+                ?>
               </div>
             </div>
           </div>
@@ -792,23 +806,34 @@
 <!-- ======= Footer ======= -->
 <?php include "repeats/footer.php"?>
 <!-- ======= Footer ======= -->
-<div  class="toast-container">
-  <div class="image">
-    <img src="assets/img/buzzer.webp" alt="" />
-  </div>
-
-  <div class="text-content">
-    <h3>
-      Hello Amigos! The new Core Team of the E-Crush has been announced. Please
-    <a href="sebpage.php" style="pointer-events:all">   click here</a> to know more.
-    </h3>
-    <p class="author-name">E-Crush</p>
-  </div>
-
-  <div >
-  <img class="close" style="pointer-events:all" src="assets/img/close-icon.webp"  alt="" /> </a>
-  </div>
-</div>
+<?php
+  $k = "SELECT * FROM `notifications` where `active` = 'yes'";
+  $e1 = mysqli_query($con,$k);
+  if(mysqli_num_rows($e1)>0){
+    while($row = mysqli_fetch_assoc($e1)){
+      $n_name = $row['notification_name'];
+      $message = $row['message'];
+      $n_link = $row['link'];
+    }      
+  }else{
+    $n_name = "";
+    $message = "Checkout our Weekend Trivia Winners!!";
+    $n_link = "Trainers.php";
+  }
+  echo '
+    <div  class="toast-container">
+      <div class="image"><img src="assets/img/buzzer.webp" alt="" /></div>
+      <div class="text-content">
+        <h3>
+          '.$message.'
+          <br>Please <a href="'.$n_link.'" style="pointer-events:all">click here</a> to know more.
+        </h3>
+        <p class="author-name">E-Crush</p>
+      </div>
+      <div><img class="close" style="pointer-events:all" src="assets/img/close-icon.webp"  alt="" /> </a></div>
+    </div>
+    ';
+?>
 <!-- <div id="preloader"></div> -->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
     class="bi bi-arrow-up-short"></i></a>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2022 at 12:20 AM
+-- Generation Time: Aug 14, 2022 at 02:52 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -35,13 +35,6 @@ CREATE TABLE `contact_form` (
   `email` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `contact_form`
---
-
-INSERT INTO `contact_form` (`sno`, `name`, `date`, `message`, `email`) VALUES
-(3, 'me', 'today', 'nothinf', 'no@gmial.com');
-
 -- --------------------------------------------------------
 
 --
@@ -69,14 +62,6 @@ CREATE TABLE `notifications` (
   `active` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `notifications`
---
-
-INSERT INTO `notifications` (`sno`, `notification_name`, `date`, `message`, `link`, `active`) VALUES
-(2, 'fun', '2022-08-02', 'gooo onnn', 'https://github.com/aruntejamenda', 'no'),
-(4, 'fun2', '2022-09-02', 'nothing again', 'aruntejamenda@blogspot.com', 'yes');
-
 -- --------------------------------------------------------
 
 --
@@ -93,13 +78,6 @@ CREATE TABLE `special_wishes` (
   `active` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `special_wishes`
---
-
-INSERT INTO `special_wishes` (`sno`, `name`, `date`, `file1_name`, `file2_name`, `file3_name`, `active`) VALUES
-(8, 'independence day', '2022-08-15', 'special_wishes_1 (7).jpg', 'special_wishes_1 (8).jpg', 'special_wishes_1 (9).jpg', 'yes');
-
 -- --------------------------------------------------------
 
 --
@@ -111,13 +89,6 @@ CREATE TABLE `suggestions` (
   `date` varchar(255) DEFAULT NULL,
   `message` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `suggestions`
---
-
-INSERT INTO `suggestions` (`sno`, `date`, `message`) VALUES
-(2, 'tomorrow', 'just for fun');
 
 -- --------------------------------------------------------
 
@@ -136,14 +107,6 @@ CREATE TABLE `weekend_trivia` (
   `active` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `weekend_trivia`
---
-
-INSERT INTO `weekend_trivia` (`sno`, `name`, `date`, `link`, `winner1`, `winner2`, `winner3`, `active`) VALUES
-(7, 'week1', '2022-08-15', 'github.com', 'a_A_AB_B_B_', 'B_B_B_', 'C_C_C', 'yes'),
-(8, 'week2', '2022-08-16', 'aruntjaemda@gmail.com', 'z_z_z', 'y_Y_y', 'x_x_x', 'no');
-
 -- --------------------------------------------------------
 
 --
@@ -159,13 +122,6 @@ CREATE TABLE `week_with_ecrush` (
   `file3_name` varchar(255) NOT NULL,
   `active` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `week_with_ecrush`
---
-
-INSERT INTO `week_with_ecrush` (`sno`, `name`, `date`, `file1_name`, `file2_name`, `file3_name`, `active`) VALUES
-(19, 'none', '2022-08-10', 'week_with_ecrush__1 (1).jpg', 'week_with_ecrush__1 (2).jpg', 'week_with_ecrush__1 (3).jpg', 'yes');
 
 --
 -- Indexes for dumped tables
@@ -221,7 +177,7 @@ ALTER TABLE `week_with_ecrush`
 -- AUTO_INCREMENT for table `contact_form`
 --
 ALTER TABLE `contact_form`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `login`
@@ -233,31 +189,31 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `special_wishes`
 --
 ALTER TABLE `special_wishes`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `suggestions`
 --
 ALTER TABLE `suggestions`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `weekend_trivia`
 --
 ALTER TABLE `weekend_trivia`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `week_with_ecrush`
 --
 ALTER TABLE `week_with_ecrush`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

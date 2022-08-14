@@ -68,4 +68,26 @@ $(document).ready(function(){
             }
         });
     });
+    $("#update_winners").click(function(){
+        var sno = $("#winners_sno").val();
+        if(sno !="select"){
+            var w1 =$("#winner1").val();
+            var w2 =$("#winner2").val();
+            var w3 =$("#winner3").val();
+            // alert(w1+w2+w3);
+            $.ajax({
+                url:"apis/update_winners.php",
+                method: "post",
+                data:{winners_sno:sno,winner1:w1,winner2:w2,winner3:w3},
+                success: function(response){
+                    alert(response);
+                    location.reload();
+                    // location.replace("admin.php");
+                }
+            });
+        }else{
+            alert("option not valid");
+            $("winners_sno").css("border","2px solid red");
+        }
+    });
 })

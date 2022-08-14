@@ -138,30 +138,41 @@
           <h2>Winners</h2>
         </div>
         <div class="row text-center align-items-center">
-          <div class="col-12 col-md-4">
-            <div class="background-card mb-3 shadow">
-               <img src="assets/img/trainers/award.png" class="image-style img-fluid" style="height:100px ;width:100px;">
-               <h3>Student Name</h3>
-               <p>ID NO</p>
-               <p>COLLEGE NAME</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="background-card mb-3 shadow">
-               <img src="assets/img/trainers/award.png" class="image-style img-fluid" style="height:100px ;width:100px;">
-               <h3>Student Name</h3>
-               <p>ID NO</p>
-               <p>COLLEGE NAME</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="background-card mb-3 shadow">
-               <img src="assets/img/trainers/award.png" class="image-style"style="height:100px ;width:100px;">
-               <h3>Student Name</h3>
-               <p>ID NO</p>
-               <p>COLLEGE NAME</p>
-            </div>
-          </div>
+          <?php
+            $query1 = "SELECT * FROM `weekend_trivia` where `active`='yes'";
+            $exec1 = mysqli_query($con,$query1);
+            while($row = mysqli_fetch_assoc($exec1)){
+              $w1arr = explode("_",$row['winner1']);
+              $w2arr = explode("_",$row['winner2']);
+              $w3arr = explode("_",$row['winner3']);
+              echo '
+                <div class="col-12 col-md-4">
+                  <div class="background-card mb-3 shadow">
+                    <img src="assets/img/trainers/award.png" class="image-style img-fluid" style="height:100px ;width:100px;">
+                    <h3>'.$w1arr[0].'</h3>
+                    <p>'.$w1arr[1].'</p>
+                    <p>'.$w1arr[2].'</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="background-card mb-3 shadow">
+                    <img src="assets/img/trainers/award.png" class="image-style img-fluid" style="height:100px ;width:100px;">
+                    <h3>'.$w2arr[0].'</h3>
+                    <p>'.$w2arr[1].'</p>
+                    <p>'.$w2arr[2].'</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="background-card mb-3 shadow">
+                    <img src="assets/img/trainers/award.png" class="image-style img-fluid" style="height:100px ;width:100px;">
+                    <h3>'.$w3arr[0].'</h3>
+                    <p>'.$w3arr[1].'</p>
+                    <p>'.$w3arr[2].'</p>
+                  </div>
+                </div>
+                ';
+            }
+          ?>
         </div>
           <br>
       <br>

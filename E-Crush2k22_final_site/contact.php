@@ -17,11 +17,11 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <!-- <a href="index.php">
-        <img style="height:60px; width:70px" src="assets/img/logo.png">
+        <img style="height:60px; width:70px" src="assets/img/logo.webp">
       </a>
       <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.png" alt="E-Crush" class="img-fluid"></a>
+       <a href="index.php" class="logo me-auto"><img src="assets/img/favicon.webp" alt="E-Crush" class="img-fluid"></a>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li class="navElement">
@@ -148,27 +148,49 @@
       <div class="contactcontainer">
         <div class="content">
           <div class="image-box">
-            <img src="assets/img/Contact.png" alt="">
+            <img src="assets/img/Contact.webp" alt="">
           </div>
-        <form action="#">
+
+          <!-- --------------------------------- -->
+        <form action="apis/contact_form.php" method="post">
           <div class="topic">Send us a message</div>
-          <div class="input-box">
-            <input type="text" required>
-            <label>Enter your name</label>
-          </div>
-          <div class="input-box">
-            <input type="text" required>
-            <label>Enter your email</label>
-          </div>
-          <div class="message-box">
-            <textarea></textarea>
-            <label>Enter your message</label>
-          </div>
-           
-          <div class="input-box">
-            <input type="submit" value="Send Message">
-          </div>
+            <div class="input-box">
+              <input type="text" required id="name" name="name">
+              <label>Enter your name</label>
+            </div>
+            <div class="input-box">
+              <input type="email" required id="email" name="email">
+              <label>Enter your email</label>
+            </div>
+            <div class="message-box">
+              <textarea id="message" name="message"></textarea>
+              <label>Enter your message</label>
+            </div>            
+            <div class="input-box">
+              <input type="submit" value="Send Message" id="send_message">
+            </div>
         </form>
+        <!-- <script>
+          $(document).ready(function(){
+             var date= new Date();
+              $("#send_message").click(function(){
+                  var name = $("#name").val();
+                  var date = date.getDate();
+                  var message = $("#message").val();
+                  var email = $("#email").val();
+                   //-------
+                   alert(date);
+                  $.ajax({
+                      url:"contact_form.php",
+                      method:"post",
+                      data:{name:name,date:date,message:message,email:email},
+                      success:function(response){
+                          alert(response);
+                      }
+                  });
+              });
+          });
+        </script> -->
       </div>
       </div>
     </section><!-- End Contact Section -->

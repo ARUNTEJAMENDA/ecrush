@@ -39,8 +39,9 @@ Andhra Pradesh - 521202<br><br>
         <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4 class="text-white">Comment us</h4>
           <p>Give your valuable suggestions</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="send">
+          <form action="apis/add_suggestions.php" method="post">
+            <input type="text" name="message">
+            <input type="submit" value="send">
           </form>
           <br>
           
